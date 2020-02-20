@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="25sp"
+            android:text="Doms Color Picker"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnColorSelected"
+            android:layout_width="324dp"
+            android:layout_height="196dp" />
+
+        <Button
+            android:id="@+id/btnColorPicker"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="Choose Color" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="Preset 1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="Preset 2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="Preset 3" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:text="Preset 4" />
+    </LinearLayout>
+    <include layout="@layout/colorpicker" />
+</RelativeLayout>
