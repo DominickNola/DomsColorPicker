@@ -3,10 +3,10 @@
     <item android:id="@android:id/background"
         android:gravity="center_vertical|fill_horizontal">
         <shape android:shape="rectangle"
-            android:tint="#000000">
+            android:tint="#F8FAFA">
             <corners android:radius="8dp"/>
             <size android:height="30dp" />
-            <solid android:color="#000000" />
+            <solid android:color="#F8FAFA" />
         </shape>
     </item>
     <item android:id="@android:id/progress"
@@ -17,7 +17,7 @@
                     android:drawable="@android:color/transparent" />
                 <item>
                     <shape android:shape="rectangle"
-                        android:tint="#F8FAFA">
+                        android:tint="#000000">
                         <corners android:radius="8dp"/>
                         <size android:height="30dp" />
                         <solid android:color="#F7F9FA" />

@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">Doms Color Picker</string>
+    <string name="app_name">Dom\'s Color Picker</string>
     <string name="layers">Layers</string>
     <string name="top">Top</string>
     <string name="bottom">Bottom</string>
+    <string name="what_is_your_color_name">What is your new color name?</string>
+
 </resources>
