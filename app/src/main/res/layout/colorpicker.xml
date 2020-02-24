@@ -66,12 +66,14 @@
             <TextView
                 android:id="@+id/color_name_edit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="26dp"
                 android:background="#FABB34"
                 android:ems="10"
                 android:gravity="center"
                 android:inputType="textPersonName"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/btnColorPreview"
@@ -91,7 +93,7 @@
                 <TextView
                     android:layout_width="16dp"
                     android:layout_height="match_parent"
-                    android:background="#555555"
+                    android:background="#41224F"
                     android:paddingLeft="5dp"
                     android:text="#"
                     android:textColor="#FFFFFF"
@@ -102,7 +104,7 @@
                     android:id="@+id/strColor"
                     android:layout_width="91dp"
                     android:layout_height="match_parent"
-                    android:background="#555555"
+                    android:background="#41224F"
                     android:imeOptions="actionDone"
                     android:maxLength="8"
                     android:text="FFFF0000"
@@ -283,71 +285,98 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Preset 1" />
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoSizeTextType="uniform"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeMaxTextSize="100sp"
+                    android:autoSizeStepGranularity="2sp"
+                    android:layout_weight="1"
+                    android:text="Preset 1" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="Save"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Preset 2" />
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Preset 2" />
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="Save"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Preset 3" />
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/button7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Preset 3" />
+
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="Save"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Preset 4" />
-        </LinearLayout>
+                android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="38dp"
-            android:orientation="horizontal">
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Preset 4" />
 
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:text="Save"
-                android:textSize="8sp" />
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="save"
+                    android:textSize="8sp" />
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:text="Save"
-                android:textSize="8sp" />
-
-            <Button
-                android:id="@+id/button13"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:text="Save"
-                android:textSize="8sp" />
-
-            <Button
-                android:id="@+id/button14"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_weight="1"
-                android:text="save"
-                android:textSize="8sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -389,6 +418,42 @@
                 android:layout_weight="1"
                 android:background="#FABB34"
                 android:text="Preset 4 Save"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/back1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#BDBCBB"
+                android:text="Go Back"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/back2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#BDBCBB"
+                android:text="Go Back"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/back3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#BDBCBB"
+                android:text="Go Back"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/back4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#BDBCBB"
+                android:text="Go Back"
                 android:visibility="invisible" />
         </LinearLayout>
 

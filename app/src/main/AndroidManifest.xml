@@ -4,10 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:logo="@drawable/fluer"
         android:label="&#160;&#160;Dom\'s Color Picker"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name="MainActivity"
             android:icon="@drawable/ic_action_name">
@@ -18,4 +17,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>
