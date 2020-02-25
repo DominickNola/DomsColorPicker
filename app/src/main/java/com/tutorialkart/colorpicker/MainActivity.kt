@@ -12,6 +12,7 @@ import kotlinx.android.synthetic.main.colorpicker.*
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         val settings = getSharedPreferences("settings", 0)
         val editor = settings.edit()
         val settings2 = getSharedPreferences("settings2", 0)
